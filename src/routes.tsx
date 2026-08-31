@@ -70,6 +70,7 @@ export const LESSONS: LessonMeta[] = [
  */
 export const LESSON_PAGES: Record<string, Component> = {
   '00-frontend-basics': lazy(() => import('./lessons/00-frontend-basics')),
+  '01-signals': lazy(() => import('./lessons/01-signals')),
 }
 
 export const isReady = (slug: string) => slug in LESSON_PAGES
